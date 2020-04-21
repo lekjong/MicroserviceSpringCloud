@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/microservicespringcloud-api/pom.xml" />
+        <option value="$PROJECT_DIR$/microservice-supplier-provider-8001/pom.xml" />
+        <option value="$PROJECT_DIR$/microservice-supplier-consumer-80/pom.xml" />
+        <option value="$PROJECT_DIR$/microservice-eurekaserver-7001/pom.xml" />
+        <option value="$PROJECT_DIR$/microservice-eurekaserver-7002/pom.xml" />
+        <option value="$PROJECT_DIR$/microservice-eurekaserver-7003/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="false" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>

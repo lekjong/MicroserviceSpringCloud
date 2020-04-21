@@ -1,0 +1,15 @@
+server:
+  port: 7002
+eureka:
+  instance:
+    hostname: eurekaserver7002.com
+  client:
+    fetch-registry: false
+    register-with-eureka: true
+    service-url:
+      #单机版 http://${eureka.instance.hostname}:${server.port}/eureka/，以下为集群版,指定其余的服务器url
+      defaultZone: http://eurekaserver7001.com:7001/eureka/,http://eurekaserver7003.com:7003/eureka/
+
+spring:
+  application:
+    name: eureka-servers

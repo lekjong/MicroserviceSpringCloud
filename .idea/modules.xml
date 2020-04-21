@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/microservice-eurekaserver-7001/microservice-eurekaserver-7001.iml" filepath="$PROJECT_DIR$/microservice-eurekaserver-7001/microservice-eurekaserver-7001.iml" />
+      <module fileurl="file://$PROJECT_DIR$/microservice-eurekaserver-7002/microservice-eurekaserver-7002.iml" filepath="$PROJECT_DIR$/microservice-eurekaserver-7002/microservice-eurekaserver-7002.iml" />
+      <module fileurl="file://$PROJECT_DIR$/microservice-eurekaserver-7003/microservice-eurekaserver-7003.iml" filepath="$PROJECT_DIR$/microservice-eurekaserver-7003/microservice-eurekaserver-7003.iml" />
+      <module fileurl="file://$PROJECT_DIR$/microservice-supplier-consumer-80/microservice-supplier-consumer-80.iml" filepath="$PROJECT_DIR$/microservice-supplier-consumer-80/microservice-supplier-consumer-80.iml" />
+      <module fileurl="file://$PROJECT_DIR$/microservice-supplier-provider-8001/microservice-supplier-provider-8001.iml" filepath="$PROJECT_DIR$/microservice-supplier-provider-8001/microservice-supplier-provider-8001.iml" />
+      <module fileurl="file://$PROJECT_DIR$/microservicespringcloud.iml" filepath="$PROJECT_DIR$/microservicespringcloud.iml" />
+      <module fileurl="file://$PROJECT_DIR$/microservicespringcloud-api/microservicespringcloud-api.iml" filepath="$PROJECT_DIR$/microservicespringcloud-api/microservicespringcloud-api.iml" />
+    </modules>
+  </component>
+</project>

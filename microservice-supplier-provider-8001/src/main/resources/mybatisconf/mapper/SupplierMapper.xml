@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lkq.micservice.mapper.SupplierMapper">
+
+<select id="findSupplierBySid" resultType="Supplier" >
+Select * from t_supplier WHERE sid = #{sid};
+</select>
+
+<select id="findSupplierBySupplierCode" parameterType="string" resultType="Supplier">
+    SELECT * from  t_supplier WHERE supplier_name like '%${sname}%';
+</select>
+
+<select id="listSupplier"  resultType="Supplier">
+    SELECT * from  t_supplier WHERE 1=1;
+</select>
+    
+<insert id="addSupplier" parameterType="Supplier"  >
+    insert into `t_supplier` (
+      `sid`,
+      `supplier_code`,
+      `supplier_name`,
+      `contact`,
+      `phone`,
+      `address`,
+      `fax`,
+      `description`,
+      `create_date`,
+      'db_source'
+    )
+    values(
+     #{sid},
+    #{supplierCode},
+    #{supplierName},
+    #{contact},
+    #{phone},
+    #{address},
+    #{fax},
+    #{description},
+    now(),
+    #{dbSource}
+    );
+</insert>
+
+    <delete id="deleteSupplierBysid" >
+        delete  from  t_supplier where sid=#{sid};
+    </delete>
+
+</mapper>

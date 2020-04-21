@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="microservice-supplier-consumer-80" />
+        <module name="microservice-eurekaserver-7003" />
+        <module name="microservice-eurekaserver-7002" />
+        <module name="microservice-eurekaserver-7001" />
+        <module name="microservicespringcloud-api" />
+        <module name="microservice-eurekaservice-7001" />
+        <module name="microservice-supplier-provider-8001" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="microservice-eurekaserver-7001" target="1.8" />
+      <module name="microservice-eurekaserver-7002" target="1.8" />
+      <module name="microservice-eurekaserver-7003" target="1.8" />
+      <module name="microservice-supplier-consumer-80" target="1.8" />
+      <module name="microservice-supplier-provider-8001" target="1.8" />
+      <module name="microservicespringcloud" target="1.8" />
+      <module name="microservicespringcloud-api" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="microservice-eurekaserver-7001" options="-parameters" />
+      <module name="microservice-eurekaserver-7002" options="-parameters" />
+      <module name="microservice-eurekaserver-7003" options="-parameters" />
+      <module name="microservice-supplier-consumer-80" options="-parameters" />
+      <module name="microservice-supplier-provider-8001" options="-parameters" />
+      <module name="microservicespringcloud" options="-parameters" />
+      <module name="microservicespringcloud-api" options="-parameters" />
+    </option>
+  </component>
+</project>

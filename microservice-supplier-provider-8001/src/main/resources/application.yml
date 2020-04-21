@@ -1,0 +1,46 @@
+server:
+  port: 8001
+
+mybatis:
+  config-location: classpath:mybatisconf/mapper.cfg.xml
+  type-aliases-package: com.lkq.api.entity
+  mapper-locations: classpath:mybatisconf/mapper/**/*.xml
+
+
+spring:
+  #指定本应用的名称，作为服务提供者必不可少；
+  application:
+    name: supplier-provider-8001
+  #数据源的配置
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    username: root
+    password: lk123456
+    url: jdbc:mysql://localhost:3306/db_microservice?serverTimezone=GMT%2B8
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    #数据源的其他配置
+    initialSize: 8
+    minIdle: 5
+    maxActive: 20
+    maxWait: 60000
+    timeBetweenEvictionRunsMillis: 60000
+    minEvictableIdleTimeMillis: 300000
+    validationQuery: SELECT 1 FROM DUAL
+    testWhileIdle: true
+    testOnBorrow: false
+    testOnReturn: false
+    poolPreparedStatement: true
+
+
+#指定服务的注册中心的url
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eurekaserver7001.com:7001/eureka/,http://eurekaserver7002.com:7002/eureka/,http://eurekaserver7003.com:7003/eureka/
+
+  #配置本微服务的基本信息，k-v 会以jason的格式响应给系统请求。
+info:
+  app.name: microservice-supplier-provider-8001
+  app.org: com.lkq
+  build.artifacId: $project.artifactId$
+  build.version: $project.version$
